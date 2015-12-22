@@ -16,7 +16,8 @@ sys.setdefaultencoding('utf-8')
 filename = 'data/text.txt'
 database = 'data/letters.db'
 features = ['卷', '◎', '◇', '△', '○']
-# database structure CREATE TABLE letters (id INTEGER PRIMARY KEY, juan TEXT, author TEXT, title, TEXT letter TEXT, dynasty TEXT)
+# # database structure CREATE TABLE letters (id INTEGER PRIMARY KEY, juan TEXT, author TEXT, title, TEXT letter TEXT, dynasty TEXT)
+
 def createDB(database, refresh):
     current_path = os.path.split(os.path.realpath(sys.argv[0]))[0]
     if os.path.exists(database):
